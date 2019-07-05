@@ -42,7 +42,18 @@ header {
     justify-content:space-between;
     width: calc(100% - 2em);
 }
+header a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+a.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
+header nav ul {
+
+}
 img
 {
     display: block;
