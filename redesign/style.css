@@ -11,13 +11,11 @@
     outline: 0;
     background: transparent;
 }
-
 html
 {
     font-family: Calibri, Candara, Segoe, Optima, Arial, sans-serif;
     font-weight: 100;
 }
-
 body
 {
     font-size: 1.2rem;
@@ -25,14 +23,16 @@ body
 
     margin: auto;
 
-    text-align: center;
     text-decoration: none;
 
     color: rgb(51, 51, 51);
     background: rgb(244, 244, 244);
 
+    height: 100%;
      /*display: none; */
 }
+
+
 
 header {
     position: absolute;
@@ -41,23 +41,71 @@ header {
     display: flex;
     justify-content:space-between;
     width: calc(100% - 2em);
+    background: rgb(244, 244, 244);
 }
 header a {
     text-decoration: none;
     color: rgb(51, 51, 51);
 }
-a.logo {
+header a.logo {
     font-weight: bold;
-    text-transform: uppercase;
 }
-
 header nav ul {
-
-}
-img
-{
-    display: block;
-
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
+header nav ul li a {
+    padding: 1em;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+}
+.container section {
+    padding: 2em;
+}
+.container section h1, h2, .explore {
+    text-transform: uppercase;
+    margin: 0;
+}
+.container section h2 {
+    font-size: 1.4rem;
+}
+.container section .explore {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    background: url("images/play-button.svg") no-repeat 0 5px;
+    background-size: 12px;
+    padding-left: 1em;
+}
+.container section .primary {
+    padding: 1.5em 1.5em 1.5em calc(3em + 25px);
+    background-position: 3em;
+    border: 1px Solid rgb(51, 51, 51);
+    display: inline-block;
+
+    margin-top: 3em;
+    margin-left: -3em;
+}
+.container section .main-wrapper {
+    overflow: hidden;
+}
+.container section.main {
+    padding-top: 8em;
+    background: url("images/main.jpg");
+    background-size: cover;
+}
+.container section.main p {
+    width: 70%;
+}
+
+
 
