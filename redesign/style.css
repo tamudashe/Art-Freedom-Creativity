@@ -29,7 +29,7 @@ body
     background: rgb(244, 244, 244);
 
     height: 100%;
-     /*display: none; */
+    display: none;
 }
 
 
@@ -90,13 +90,17 @@ header nav ul li a {
     padding: 1.5em 1.5em 1.5em calc(3em + 25px);
     background-position: 3em;
     border: 1px Solid rgb(51, 51, 51);
+    border-left-style: none;
     display: inline-block;
 
     margin-top: 3em;
-    margin-left: -3em;
+    margin-left: -2em;
 }
 .container section .main-wrapper {
     overflow: hidden;
+}
+.container section .main-wrapper h2 {
+    padding: 10px 0;
 }
 .container section.main {
     padding-top: 8em;
@@ -105,6 +109,79 @@ header nav ul li a {
 }
 .container section.main p {
     width: 70%;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+.container section.main h1 {
+    font-size: 2.7rem;
+}
+.container section.sidebar, section.subscribe {
+    font-size: .9rem;
+    line-height: 1.5em;
+}
+.container section.sidebar {
+    color: rgb(51, 51, 51);
+    background: rgba(209, 194, 183, 0.5);
+}
+.container section.sidebar .explore {
+    margin-top: 1em;
+    display: block;
+}
+.container section.subscribe {
+    color: rgba(209, 194, 183, 1);
+    background: rgba(51, 51, 51, 0.9);
+}
+.container section.subscribe p {
+    padding: 3px;
+}
+.container section.subscribe input {
+    background: rgba(209, 194, 183, 1);;
+    width: calc(100% - 2em);
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: 0;
+
+}
+.container section.subscribe button {
+    width: 100%;
+    background: rgba(209, 194, 183, 1);;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width: 760px) {
+    html {
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 1444px) {
+    header {
+        background: none;
+    }
+    .container {
+        grid-template-columns: 70% auto;
+        grid-template-rows: 60% auto;
+        grid-template-areas:
+                "main featured"
+                "main subscribe";
+        height: 100vh;
+    }
+    section.main {
+        grid-area: main;
+    }
+    section {
+        display: grid;
+        grid-template-rows: auto;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    html {
+        font-size: 21px;
+    }
 }
 
 
