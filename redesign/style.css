@@ -1,6 +1,5 @@
 /* Styles de base */
-*
-{
+* {
     font-size: 100%;
 
     margin: 0;
@@ -11,13 +10,11 @@
     outline: 0;
     background: transparent;
 }
-html
-{
+html {
     font-family: Calibri, Candara, Segoe, Optima, Arial, sans-serif;
     font-weight: 100;
 }
-body
-{
+body {
     font-size: 1.2rem;
     line-height: 1.5;
 
@@ -31,8 +28,6 @@ body
     height: 100%;
     display: none;
 }
-
-
 
 header {
     position: absolute;
@@ -62,8 +57,6 @@ header nav ul li a {
     padding: 1em;
 }
 
-
-
 .container {
     display: grid;
     grid-template-columns: auto;
@@ -74,6 +67,9 @@ header nav ul li a {
 .container section h1, h2, .explore {
     text-transform: uppercase;
     margin: 0;
+}
+span{
+    color: #CE4747;
 }
 .container section h2 {
     font-size: 1.4rem;
@@ -177,7 +173,6 @@ header nav ul li a {
         align-items: center;
     }
 }
-
 @media only screen and (min-width: 1800px) {
     html {
         font-size: 21px;
