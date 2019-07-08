@@ -179,6 +179,11 @@ main {
     transition: background-color 2s ease-out;
 }
 
+footer {
+    height: 50vh;
+    background: rgb(244, 244, 244);
+}
+
 
 @media only screen and (min-width: 760px) {
     html {
@@ -219,7 +224,7 @@ main {
 
     .container {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 2fr 3fr;
         margin-left: 2em;
     }
     .container > * {
@@ -231,6 +236,7 @@ main {
         justify-content: center;
         text-align: left;
     }
+
     .container .contact {
         padding: 2em;
     }
