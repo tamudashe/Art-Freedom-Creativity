@@ -52,8 +52,8 @@ header nav ul {
     padding: 0;
 
     clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
+    height: 0;
+    transition: height .4s ease;
     visibility: hidden;
 }
 header nav ul li a {
@@ -77,7 +77,7 @@ header .menu-icon .nav-icon {
     height: 2px;
     width: 18px;
     position: relative;
-    transition: background .2s ease-out;
+    transition: background .4s ease;
 }
 header .menu-icon .nav-icon:before {
     content: "";
@@ -87,7 +87,7 @@ header .menu-icon .nav-icon:before {
     width: 100%;
     position: absolute;
     top: 5px;
-    transition: all .2s ease-out;
+    transition: all .4s ease;
 }
 header .menu-icon .nav-icon:after {
     content: "";
@@ -97,13 +97,12 @@ header .menu-icon .nav-icon:after {
     width: 100%;
     position: absolute;
     top: -5px;
-    transition: all .2s ease-out;
+    transition: all .4s ease;
 }
 header .menu-btn {
     display: none;
 }
 header .menu-btn:checked ~ nav ul {
-    max-height: 100vh;
     visibility: visible;
     height: 100vh;
     overflow: hidden;
@@ -248,7 +247,6 @@ span{
     header .menu-icon .nav-icon {
         display: none;
     }
-
 }
 @media only screen and (min-width: 1444px) {
     header {

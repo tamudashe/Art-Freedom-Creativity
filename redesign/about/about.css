@@ -29,9 +29,103 @@ body {
     /*display: none;*/
 }
 
-
-
 header {
+    padding: 1em;
+    z-index: 20;
+    width: calc(100% - 2em);
+    background: rgb(244, 244, 244);
+    position: fixed;
+}
+header a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+header a.logo {
+    font-weight: bold;
+    float: right;
+    display: block;
+}
+header nav ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    clear: both;
+    height: 0;
+    transition: height .4s ease;
+    visibility: hidden;
+}
+header nav ul li a {
+    padding: 20px;
+    display: block;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.9);
+}
+
+header nav ul li a:hover {
+    color: rgba(51, 51, 51, 0.8);
+}
+header .menu-icon {
+    position: relative;
+    float: left;
+    padding: 11px;
+    cursor: pointer;
+}
+header .menu-icon .nav-icon {
+    background: rgba(51, 51, 51, 0.9);
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .4s ease;
+}
+header .menu-icon .nav-icon:before {
+    content: "";
+    background: rgba(51, 51, 51, 0.9);
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    transition: all .4s ease;
+}
+header .menu-icon .nav-icon:after {
+    content: "";
+    background: rgba(51, 51, 51, 0.9);
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    transition: all .4s ease;
+}
+header .menu-btn {
+    display: none;
+}
+header .menu-btn:checked ~ nav ul {
+    visibility: visible;
+    height: 100vh;
+    overflow: hidden;
+}
+header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+
+@media only screen and (min-width: 760px) {
+    html {
+        font-size: 18px;
+    }
+
+    header {
     position: absolute;
     padding: 1em;
     z-index: 20;
@@ -40,33 +134,49 @@ header {
     width: calc(100% - 2em);
     background: rgb(244, 244, 244);
 }
-header a {
-    text-decoration: none;
-    color: rgb(51, 51, 51);
-}
-header a.logo {
-    font-weight: bold;
-}
-header nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-header nav ul li a {
-    padding: 1em;
-}
-
-@media only screen and (min-width: 760px) {
-    html {
-        font-size: 18px;
+    header a {
+        text-decoration: none;
+        color: rgb(51, 51, 51);
     }
+    header a.logo {
+        font-weight: bold;
+        clear: both;
+    }
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+        max-height: none;
+        visibility: visible;
+    }
+    header nav ul li a {
+        padding: 1em;
+        border-bottom: 0;
+        display: inline;
+    }
+    header .menu-icon .nav-icon {
+        display: none;
+    }
+
 }
 @media only screen and (min-width: 1444px) {
     header {
         background: none;
+    }
+    .container {
+        grid-template-columns: 70% auto;
+        grid-template-rows: 60% auto;
+        grid-template-areas:
+                "main featured"
+                "main subscribe";
+        height: 100vh;
+    }
+    section.main {
+        grid-area: main;
+    }
+    section {
+        display: grid;
+        grid-template-rows: auto;
+        align-items: center;
     }
 }
 @media only screen and (min-width: 1800px) {
@@ -74,6 +184,7 @@ header nav ul li a {
         font-size: 21px;
     }
 }
+
 
 
 
