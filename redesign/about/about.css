@@ -131,6 +131,8 @@ main {
     width: 100vm;
 }
 
+
+/*Footer*/
 footer .footer-wrapper {
     background: rgb(244, 244, 244);
     padding: 30px 0 30px 0;
@@ -164,7 +166,6 @@ footer .terms .other-stuff ul li {
 footer .terms .other-stuff ul li a {
     color: rgba(51, 51, 51, .9);
 }
-
 footer .footer-wrapper .inner input {
     width: calc(100% - 2em);
     border: 1px solid rgba(51, 51, 51, .6);
@@ -179,7 +180,6 @@ footer .footer-wrapper .inner button {
     color: rgba(51, 51, 51, .6);
     border-radius: 5px;
 }
-
 footer .footer-wrapper .social-media a {
     padding-right: 35px;
     font-size: 30px;
@@ -225,15 +225,62 @@ footer .footer-wrapper .social-media a {
         display: none;
     }
 
+
+    /*Footer*/
     footer .footer-wrapper {
         background: rgb(244, 244, 244);
         width: 70vw;
         margin: auto;
 
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr 2fr;
+        grid-template-columns: 3fr 2fr 2fr 3fr;
         grid-gap: 10px;
-}
+        padding: 30px 0 30px 0;
+    }
+
+    footer .footer-wrapper h2, footer .footer-wrapper h3 {
+        padding-bottom: .6em;
+    }
+    footer .footer-wrapper p, footer .footer-wrapper a {
+        font-size: .7em;
+        color: rgba(51, 51, 51, .6);
+    }
+    footer .footer-wrapper .global {
+        padding: 30px;
+    }
+    hr {
+        display: none;
+    }
+    footer .terms {
+        font-size: .7em;
+        color: rgba(51, 51, 51, .6);
+        padding: 0 30px 30px 30px;
+    }
+    footer .terms .other-stuff ul li {
+        display: inline-block;
+        padding-right: 10px;
+    }
+    footer .terms .other-stuff ul li a {
+        color: rgba(51, 51, 51, .9);
+    }
+    footer .footer-wrapper .inner input {
+        width: calc(100% - 2em);
+        border: 1px solid rgba(51, 51, 51, .6);
+        color: rgba(51, 51, 51, .6);
+        margin-bottom: 1em;
+        border-radius: 5px;
+        padding: .4em;
+    }
+    footer .footer-wrapper .inner button {
+        padding: .4em;
+        border: 1px solid rgba(51, 51, 51, .6);
+        color: rgba(51, 51, 51, .6);
+        border-radius: 5px;
+    }
+    footer .footer-wrapper .social-media a {
+        padding-right: 10px;
+        font-size: 20px;
+    }
 
 }
 @media only screen and (min-width: 1444px) {
