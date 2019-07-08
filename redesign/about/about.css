@@ -26,6 +26,7 @@ body {
     background: rgb(244, 244, 244);
 
     height: 100%;
+    display: grid;
     /*display: none;*/
 }
 a {
@@ -37,7 +38,6 @@ ul {
 
 header {
     padding: 1em;
-    z-index: 20;
     width: calc(100% - 2em);
     background: rgb(244, 244, 244);
     position: fixed;
@@ -124,12 +124,21 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after {
     top: 0;
 }
 
-main {
-    background: url("https://images.pexels.com/photos/179943/pexels-photo-179943.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+main .bg-content {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("https://images.pexels.com/photos/1153895/pexels-photo-1153895.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-size: cover;
-    height: 100vh;
-    width: 100vm;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(244, 244, 244);
 }
+
 
 
 /*Footer*/
@@ -185,26 +194,22 @@ footer .footer-wrapper .social-media a {
     font-size: 30px;
 }
 
-
-
-
+/*Media Queries*/
 @media only screen and (min-width: 760px) {
     html {
         font-size: 18px;
     }
 
+    /*Header*/
     header {
-    position: fixed;
-    padding: 1em;
-    z-index: 20;
-    display: flex;
-    justify-content:space-between;
-    width: calc(100% - 2em);
-    background: rgba(0, 0, 0, .7);
-}
+        position: fixed;
+        padding: 1em;
+        display: flex;
+        justify-content:space-between;
+        width: calc(100% - 2em);
+    }
     header a {
         text-decoration: none;
-        color: rgb(51, 51, 51);
     }
     header a.logo {
         font-weight: bold;
@@ -225,19 +230,32 @@ footer .footer-wrapper .social-media a {
         display: none;
     }
 
+    /*Main*/
+    main .bg-content {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+        ),
+        url("https://images.pexels.com/photos/269923/pexels-photo-269923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+        background-size: cover;
+        height: 70vh;
+    }
+    main .bg-content h1 {
+        font-size: 2em;
+    }
 
     /*Footer*/
-    footer .footer-wrapper {
-        background: rgb(244, 244, 244);
+    footer {
         width: 70vw;
         margin: auto;
-
+    }
+    footer .footer-wrapper {
+        background: rgb(244, 244, 244);
         display: grid;
         grid-template-columns: 3fr 2fr 2fr 3fr;
         grid-gap: 10px;
         padding: 30px 0 30px 0;
     }
-
     footer .footer-wrapper h2, footer .footer-wrapper h3 {
         padding-bottom: .6em;
     }
@@ -251,10 +269,16 @@ footer .footer-wrapper .social-media a {
     hr {
         display: none;
     }
+    footer .terms .text br {
+        display: none;
+    }
     footer .terms {
         font-size: .7em;
         color: rgba(51, 51, 51, .6);
         padding: 0 30px 30px 30px;
+
+        display: flex;
+        justify-content: space-between;
     }
     footer .terms .other-stuff ul li {
         display: inline-block;
@@ -269,10 +293,10 @@ footer .footer-wrapper .social-media a {
         color: rgba(51, 51, 51, .6);
         margin-bottom: 1em;
         border-radius: 5px;
-        padding: .4em;
+        padding: .1em;
     }
     footer .footer-wrapper .inner button {
-        padding: .4em;
+        padding: .1em;
         border: 1px solid rgba(51, 51, 51, .6);
         color: rgba(51, 51, 51, .6);
         border-radius: 5px;
@@ -281,11 +305,17 @@ footer .footer-wrapper .social-media a {
         padding-right: 10px;
         font-size: 20px;
     }
-
 }
 @media only screen and (min-width: 1444px) {
     header {
-        background: none;
+         position: fixed;
+         padding: 1em;
+         display: flex;
+         justify-content:space-between;
+         width: calc(100% - 2em);
+    }
+    header a {
+        text-decoration: none;
     }
     .container {
         grid-template-columns: 70% auto;

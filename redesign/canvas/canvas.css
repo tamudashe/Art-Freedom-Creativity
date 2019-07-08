@@ -33,12 +33,12 @@ header {
     padding: 1em;
     z-index: 20;
     width: calc(100% - 2em);
-    background: rgb(51, 51, 51);
+    background: rgb(244, 244, 244);
     position: fixed;
 }
 header a {
     text-decoration: none;
-    color: rgb(244, 244, 244);
+    color: rgb(51, 51, 51);
 }
 header a.logo {
     font-weight: bold;
@@ -61,7 +61,6 @@ header nav ul li a {
     display: block;
     border-bottom: 1px solid rgba(51, 51, 51, 0.9);
 }
-
 header nav ul li a:hover {
     color: rgba(51, 51, 51, 0.8);
 }
@@ -119,24 +118,32 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after {
     top: 0;
 }
 
+main {
+    background: rgb(225,225,227);
+    background-size: cover;
+    height: 100vh;
+    width: 100vm;
+}
 
+
+
+/*Media Queries*/
 @media only screen and (min-width: 760px) {
     html {
         font-size: 18px;
     }
 
+    /*Header*/
     header {
-    position: absolute;
-    padding: 1em;
-    z-index: 20;
-    display: flex;
-    justify-content:space-between;
-    width: calc(100% - 2em);
-    background: rgb(244, 244, 244);
-}
+        position: fixed;
+        padding: 1em;
+        z-index: 20;
+        display: flex;
+        justify-content:space-between;
+        width: calc(100% - 2em);
+    }
     header a {
         text-decoration: none;
-        color: rgb(51, 51, 51);
     }
     header a.logo {
         font-weight: bold;
@@ -156,11 +163,19 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after {
     header .menu-icon .nav-icon {
         display: none;
     }
-
 }
 @media only screen and (min-width: 1444px) {
     header {
-        background: none;
+         position: fixed;
+         padding: 1em;
+         z-index: 20;
+         display: flex;
+         justify-content:space-between;
+         width: calc(100% - 2em);
+         background: none;
+    }
+    header a {
+        text-decoration: none;
     }
     .container {
         grid-template-columns: 70% auto;

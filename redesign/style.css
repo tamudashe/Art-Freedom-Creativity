@@ -195,7 +195,7 @@ span{
     padding: 3px;
 }
 .container section.subscribe input {
-    background: rgba(209, 194, 183, 1);;
+    background: rgba(209, 194, 183, 1);
     width: calc(100% - 2em);
     padding: 1em;
     margin-bottom: 1em;
@@ -204,7 +204,7 @@ span{
 }
 .container section.subscribe button {
     width: 100%;
-    background: rgba(209, 194, 183, 1);;
+    background: rgba(209, 194, 183, 1);
     padding: 1em;
     border: none;
     border-radius: 5px;
