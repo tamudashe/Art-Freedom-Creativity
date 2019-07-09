@@ -251,7 +251,7 @@ footer .footer-wrapper .social-media a {
     }
 
     header {
-    position: absolute;
+    position: fixed;
     padding: 1em;
     z-index: 20;
     display: flex;
