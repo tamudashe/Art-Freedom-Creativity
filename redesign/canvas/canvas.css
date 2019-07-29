@@ -448,7 +448,7 @@ footer .footer-wrapper .social-media a
 
         padding-top: 2em;
 
-        grid-template-columns: 6fr 5fr 4fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2em;
     }
     main .section_c
