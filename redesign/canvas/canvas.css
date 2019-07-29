@@ -30,6 +30,12 @@ body
     background: rgb(244, 244, 244);
     /*display: none;*/
 }
+img
+{
+    display: block;
+
+    width: 100%;
+}
 a
 {
     text-decoration: none;
@@ -170,13 +176,15 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after
     transform: rotate(45deg);
 }
 
+/* main */
 main
 {
     width: 100vm;
-    height: 100vh;
+    min-height: 100vh;
 
     background: rgb(225,225,227);
     background-size: cover;
+    padding-top: 3em;
 }
 
 
@@ -283,6 +291,8 @@ footer .footer-wrapper .social-media a
 
         width: calc(100% - 2em);
         padding: 1em;
+
+        background: rgb(244, 244, 244);
 
         justify-content: space-between;
     }
