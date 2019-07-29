@@ -171,6 +171,15 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after
 }
 
 
+/* main */
+main
+{
+    width: 100vm;
+    min-height: 100vh;
+    background-size: cover;
+    padding-top: 3em;
+}
+
 main .container
 {
     padding: 1em;
@@ -182,6 +191,8 @@ main .container .contact form
 
     grid-template-columns: 1fr;
     grid-gap: 20px;
+
+
 }
 main .container .contact form label
 {
