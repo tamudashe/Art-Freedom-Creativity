@@ -1,6 +1,6 @@
-# FlowDev Online Art Magazine
+# [FlowDev](https://tamudashe.github.io/FlowDev-Art-Margazine/redesign/) Online Art Magazine
 
-[FlowDev](https://tamudashe.github.io/FlowDev-Art-Margazine/redesign/)
+
 
 ## **Flow Development is an online magazine that celebrates, inspires and supports the creative community across the World.**
 
