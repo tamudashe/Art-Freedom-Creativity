@@ -30,6 +30,12 @@ body
     background: rgb(244, 244, 244);
     /*display: none;*/
 }
+img
+{
+    display: block;
+
+    width: 100%;
+}
 a
 {
     text-decoration: none;
@@ -353,25 +359,21 @@ footer .footer-wrapper .social-media a
         font-size: 18px;
     }
 
+    /*Header*/
     header
     {
         position: fixed;
-        z-index: 20;
 
         display: flex;
 
         width: calc(100% - 2em);
         padding: 1em;
 
-        background: rgb(244, 244, 244);
-
         justify-content: space-between;
     }
     header a
     {
         text-decoration: none;
-
-        color: rgb(51, 51, 51);
     }
     header a.logo
     {
@@ -538,6 +540,27 @@ footer .footer-wrapper .social-media a
 }
 @media only screen and (min-width: 1444px)
 {
+    html
+    {
+        font-size: 18px;
+    }
+
+    /*Header*/
+    header
+    {
+        position: fixed;
+
+        display: flex;
+
+        width: calc(100% - 2em);
+        padding: 1em;
+
+        justify-content: space-between;
+    }
+    header a
+    {
+        text-decoration: none;
+    }
 }
 @media only screen and (min-width: 1800px)
 {

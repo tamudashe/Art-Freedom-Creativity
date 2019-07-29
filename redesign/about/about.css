@@ -32,6 +32,12 @@ body
     background: rgb(244, 244, 244);
     /*display: none;*/
 }
+img
+{
+    display: block;
+
+    width: 100%;
+}
 a
 {
     text-decoration: none;
@@ -41,9 +47,11 @@ ul
     list-style-type: none;
 }
 
+/* Header */
 header
 {
     position: fixed;
+    z-index: 20;
 
     width: calc(100% - 2em);
     padding: 1em;
@@ -327,8 +335,6 @@ footer .footer-wrapper .social-media a
 
         width: calc(100% - 2em);
         padding: 1em;
-
-        background: rgb(244, 244, 244);
 
         justify-content: space-between;
     }
