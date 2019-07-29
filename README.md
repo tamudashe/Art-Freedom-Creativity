@@ -1,4 +1,4 @@
-# Art-Freedom-Creativity
+# FlowDev Online Art Magazine
 
 ## Here's my online art magazine [FlowDev](https://tamudashe.github.io/FlowDev-Art-Margazine/redesign/)
 
