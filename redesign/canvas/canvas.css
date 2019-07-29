@@ -204,7 +204,6 @@ main
     min-height: 100vh;
     padding-top: 3em;
 
-    background: rgb(225, 225, 227);
     background-size: cover;
 }
 
@@ -224,6 +223,12 @@ main .logo
 
     padding-top: 1em;
 }
+main .logo
+{
+    padding-left: 1.2em;
+
+    color: rgba(51, 51, 51, .6);
+}
 main a,
 main p1
 {
@@ -234,6 +239,10 @@ main li
 {
     padding-bottom: 1em;
 }
+main .section_a > div
+{
+    padding-bottom: 1em;
+}
 
 main p,
 main a,
@@ -241,35 +250,25 @@ main p1
 {
     padding-bottom: .5em;
 }
-
-main .section_a a
-{
-    text-decoration: underline;
-
-    text-decoration-color: #d58987;
-}
-
-main .section_b a,
-main .section_c a
-{
-    text-decoration: underline;
-
-    text-decoration-color: #00cc6a;
-}
-
-main .section_d a
-{
-    text-decoration: underline;
-
-    text-decoration-color: #f98e5e;
-}
-
 main p1
 {
     text-align: left;
 
     color: rgba(51, 51, 51, .6);
 }
+
+/* section c */
+main .section_c {
+    background: #e1e1e3;
+}
+
+main .section_c h2 {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+
 
 /*Footer*/
 footer .footer-wrapper
