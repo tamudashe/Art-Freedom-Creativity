@@ -188,6 +188,7 @@ main .section_c a {
 main .section_d a {
     text-decoration: underline;
     text-decoration-color: #f98e5e;
+    text-transform: uppercase;
 }
 
 main p1 {
