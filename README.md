@@ -1,4 +1,4 @@
-# [FlowDev](https://tamudashe.github.io/FlowDev-Art-Margazine/redesign/) Online Art Magazine
+# [FlowDev](https://tamudashe.github.io/FlowDev-Art-Margazine/) Online Art Magazine
 
 
 
