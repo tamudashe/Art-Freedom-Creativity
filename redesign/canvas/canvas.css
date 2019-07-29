@@ -163,6 +163,11 @@ main .logo {
     padding-top: 1em;
     font-size: .8em;
 }
+main a,
+main p1
+{
+    font-family: Lucida Sans Typewriter, Lucida Console, monaco, Bitstream Vera Sans Mono, monospace;
+}
 
 main li {
     padding-bottom: 1em;
@@ -188,7 +193,6 @@ main .section_c a {
 main .section_d a {
     text-decoration: underline;
     text-decoration-color: #f98e5e;
-    text-transform: uppercase;
 }
 
 main p1 {
